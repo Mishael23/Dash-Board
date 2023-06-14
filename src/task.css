@@ -1,0 +1,146 @@
+.BackDrop{
+margin-top: 1rem;
+border-radius: 15px;
+width: 81.5%;
+height: 20rem;
+float: right;
+box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.1);
+}
+.Bold-Text{
+    font-weight: 700;
+}
+.Top-text{
+display: flex;
+}
+.Left-text{
+    margin-left: 1rem;
+    margin-top: 1rem;
+    line-height: 15px;
+}
+.Right-text{
+    display: flex;
+    margin-left: 43.5rem;
+    margin-top: 1rem; 
+    line-height: 15px;
+    text-align: center;
+}
+.Done{
+    margin-right: 2rem; 
+}
+#text-grey{
+    color: rgba(57, 57, 57, 0.76);
+    font-weight: 380;
+}
+#task-hr{
+    width: 69rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.071);
+    margin-top: 6px;
+}
+#check{
+    margin-left: 1rem;
+    height: 25px;
+    width: 20px;
+    display: block;
+    position: abso;
+}
+.Groups{
+    margin: 0;
+    padding: 0;
+}
+.headings{
+    font-size: small;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    margin-right: 5rem;
+    margin-bottom: 8rem;
+    margin-top: -1.5rem;
+}
+.headings1{
+    font-size: small;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    margin-right: 5rem;
+    margin-bottom: 8rem;
+    margin-top: -1.5rem;
+}
+.headings2{
+    font-size: small;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    margin-right: 5rem;
+    margin-bottom: 8rem;
+    margin-top: -1.5rem;
+}
+#FD{
+    margin-right: -3.5rem;
+}
+#RT{
+    margin-right:-7rem ;
+}
+#RT2{
+    margin-right:-1rem ;
+}
+#MEM{
+    margin-right: -5rem;
+}
+#Admin{
+    margin-right: -7rem;
+}
+#Admin2{text-align: center;
+    margin-left: -6rem;
+}
+#Admin3{text-align: center;
+    margin-left: -5rem;
+}
+#task-hr1{
+    width: 69rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.071);
+    margin-top: -7rem;
+}
+
+#Name{
+    font-weight: 600;
+}
+#IN-Pro{color:rgb(0, 162, 255) ;
+    background-color: rgba(0, 179, 255, 0.527);
+    border-radius: 15px;
+    height: 20px;
+    width: 90px;
+    font-weight: 500;
+    margin-right: 4rem;
+}
+#IN-Pro:hover {
+    
+    cursor: pointer;
+    background-color: rgba(11, 255, 11, 0.457);
+    color: rgb(0, 96, 3);
+}
+#date{
+    background-color: rgba(125, 168, 189, 0.365);
+    border-radius: 15px;
+    width: 50px;
+    font-weight: 400;
+    margin-right: -3rem;
+    
+}
+.Groups1{
+    margin-top: -7rem;
+}
+.Groups2{
+    margin-top: -7rem;
+    
+   
+}
+.Groups3{
+    margin-top: -7rem;
+    justify-content: center;
+}

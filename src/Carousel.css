@@ -1,0 +1,24 @@
+.Carousel{
+    background-color: rgb(5, 1, 39);
+    margin-top: -18.8rem;
+    border-radius: 15px;
+    width: 40%;
+    height: 18rem;
+    float: right;
+   margin-right: 3px;
+   box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.1);
+    }
+    .h2-style{
+        font-weight: 400;
+        margin-left: 1rem;
+        color: white;
+        margin-top: 2rem;
+    }
+
+    .main-slide{
+      margin-top:-5rem;
+    
+    }
+    .carousel .slider-wrapper{
+    
+    }

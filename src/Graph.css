@@ -1,0 +1,68 @@
+.Graph-background{
+    
+margin-top: -18.8rem;
+border-radius: 15px;
+width: 40%;
+height: 18rem;
+float: left;
+margin-left:16.2rem;
+box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.1);
+}
+
+.First-Line{
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: ;
+}
+#Date{
+    margin-left: 14rem;
+    border-radius: 10rem;
+    height: 1.7rem;
+    width: 7rem;
+    border: none;
+    background-color: rgba(106, 134, 154, 0.16);
+   
+
+}
+.SecondLine{
+    margin-top: -2rem;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    font-size:14px;
+   
+}
+.ReSearch{
+    display: flex;
+    flex-direction: row;
+}
+.Blue-circle{
+    margin-right: 5px;
+    margin-top: 1.2rem;
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(66, 196, 252);
+}
+.Design{
+display: flex;
+flex-direction: row;
+margin-left: 1rem;
+}
+.Purple-circle{
+    margin-right: 5px;
+    margin-top: 1.2rem;
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(202, 66, 252);
+}
+
+.Right-Text{
+    margin-left: 13rem;
+}
+.weight{
+    font-weight: 500;
+}
