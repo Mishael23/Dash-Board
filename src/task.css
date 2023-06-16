@@ -1,5 +1,6 @@
 .BackDrop{
 margin-top: 1rem;
+margin-right: 1.5rem;
 border-radius: 15px;
 width: 81.5%;
 height: 20rem;
@@ -58,7 +59,7 @@ display: flex;
     margin-bottom: 8rem;
     margin-top: -1.5rem;
 }
-.headings1{
+/* .headings1{
     font-size: small;
     text-align: center;
     display: flex;
@@ -68,8 +69,8 @@ display: flex;
     margin-right: 5rem;
     margin-bottom: 8rem;
     margin-top: -1.5rem;
-}
-.headings2{
+} */
+/* .headings2{
     font-size: small;
     text-align: center;
     display: flex;
@@ -79,8 +80,13 @@ display: flex;
     margin-right: 5rem;
     margin-bottom: 8rem;
     margin-top: -1.5rem;
+} */
+#task-hr1{
+    width: 69rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.071);
+    margin-top: -7rem;
 }
-#FD{
+/* #FD{
     margin-right: -3.5rem;
 }
 #RT{
@@ -101,11 +107,7 @@ display: flex;
 #Admin3{text-align: center;
     margin-left: -5rem;
 }
-#task-hr1{
-    width: 69rem;
-    border-top: 1px solid rgba(0, 0, 0, 0.071);
-    margin-top: -7rem;
-}
+
 
 #Name{
     font-weight: 600;
@@ -143,4 +145,4 @@ display: flex;
 .Groups3{
     margin-top: -7rem;
     justify-content: center;
-}
+} */

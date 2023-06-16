@@ -12,9 +12,9 @@ const Swipe = () => {
     <div className='Carousel'>
         <h2 className='h2-style'>Projects in Progress</h2>
         
-        <Carousel width="90%" showThumbs={false} className='main-slide'>
+        <Carousel width="100%" showThumbs={false} showIndicators={false} className='main-slide'>
                 <div>
-                    <img src={img1} />
+                    <img src={img1}   />
                 </div>
                 <div>
                     <img src={img2} />

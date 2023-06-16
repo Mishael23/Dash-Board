@@ -1,8 +1,21 @@
 import React from 'react'
 import "../Graph.css";
+import{Line} from 'react-chartjs-2'
+import{
+  Chart as ChartJS,
+  LineElement,
+  CategoryScale,
+  LinearScale,
+  PointELement
+} from 'chart.js';
 
-
-const Graph = () => {
+ChartJs.register(
+  LineElement,
+  CategoryScale,
+  LinearScale,
+  PointELement
+)
+function Graph() {
   return (
     <div className='Graph-background'>
             <div className='First-Line'>
@@ -24,10 +37,14 @@ const Graph = () => {
                             <p>Date updates every 2 hours</p>
                         </div>
                     </div>
-
-                  <div className='GRAPH'>
-
-                  </div>
+                
+                <div>
+                  <Line
+                  data = {data}
+                  options = {options}
+                  ></Line>
+                 
+                 </div>
     </div>
 
     
@@ -35,40 +52,5 @@ const Graph = () => {
                 
   )
 }
-const config = {
-  type: 'line',
-  // data: data,
-  options: {
-    responsive: true,
-    interaction: {
-      mode: 'index',
-      intersect: false,
-    },
-    stacked: false,
-    plugins: {
-      title: {
-        display: true,
-        text: 'Chart.js Line Chart - Multi Axis'
-      }
-    },
-    scales: {
-      y: {
-        type: 'linear',
-        display: true,
-        position: 'left',
-      },
-      y1: {
-        type: 'linear',
-        display: true,
-        position: 'right',
-
-        // grid line settings
-        grid: {
-          drawOnChartArea: false, // only want the grid lines for one axis to show up
-        },
-      },
-    }
-  },
-};
 
 export default Graph

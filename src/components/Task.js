@@ -42,7 +42,10 @@ const Task = () => {
 </div>
 
 <hr id='task-hr1'/>
+{
 
+
+/*  UN-COMMENT IF YOU NEED TO SEE THE LIST 
 <div className='Groups'>
     <input type="checkbox" name="" id="check" />
     <ul className='headings'>
@@ -89,7 +92,7 @@ const Task = () => {
         <li id='RT2'>1 Week</li>
         <li id='date'>6 Mon</li>
     </ul>
-</div>
+</div> */}
 
 </div>
 
