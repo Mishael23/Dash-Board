@@ -9,17 +9,18 @@ import img3 from "../images/img3.png"
 
 const Swipe = () => {
   return (
-    <div className='Carousel'>
+    <div className='Carou'>
         <h2 className='h2-style'>Projects in Progress</h2>
         
-        <Carousel width="100%" showThumbs={false} showIndicators={false} className='main-slide'>
-                <div>
+        <Carousel showThumbs={false} showIndicators={false} updateOnItemClick={false}
+        transitionTime={2000}	 className='main-slide'>
+                <div className='img2'>
                     <img src={img1}   />
                 </div>
-                <div>
-                    <img src={img2} />
+                <div className='img2'>
+                    <img src={img2}  />
                 </div>
-                <div>
+                <div className='img2'>
                     <img src={img3} />
                 </div>
             </Carousel>

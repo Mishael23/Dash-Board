@@ -1,7 +1,77 @@
 import React from 'react'
 import "../task.css";
+// import IMAGES from '../../assets/index.js'
+// import Table from '@mui/material/Table';
+// import TableBody from '@mui/material/TableBody';
+// import TableCell from '@mui/material/TableCell';
+// import TableContainer from '@mui/material/TableContainer';
+// import TableHead from '@mui/material/TableHead';
+// import TableRow from '@mui/material/TableRow';
 
-const Task = () => {
+import { TablePagination } from '@mui/material';
+import { DataGrid } from '@mui/x-data-grid';
+
+
+const columns = [
+    
+    { field: 'name', headerName: 'Name', type: 'number' ,width: 200 , sortable: false, disableColumnMenu:true },
+    { field: 'admin', headerName: 'Admin', type: 'number', width: 150 , sortable: false, disableColumnMenu:true },
+    { field: 'members', headerName: 'Members',type: 'number', width: 130 , sortable: false, disableColumnMenu:true },
+    { field: 'status', headerName: 'Status', type: 'number', width: 180 , sortable: false, disableColumnMenu:true },
+    { field: 'runtime', headerName: 'Runtime', type: 'number', width: 250, sortable: false, disableColumnMenu:true },
+    { field: 'finishdate', headerName: 'Finishdate', type: 'number', width: 200, sortable: false, disableColumnMenu:true}
+  
+  
+  ];
+  const rows = [
+    
+    {
+      id: 1, name: "ClientOnboarding-Circle",
+      admin: "Samanta J.",
+      members: 3,
+      status: "In Progress",
+      runtime: "6 hours",
+      finishdate: " sixMon"
+    },
+    {
+      id: 2,
+      name: "Meeting with Notion",
+      admin: "Bob P.",
+      members: 4,
+      status: 'Done',
+      runtime: "6 hours",
+      finishdate: "6Mon"
+    },
+    {
+      id: 3,
+      name: "First Handoff with Engineers",
+      admin: "Kate O.",
+      members: 10,
+      status: 'In Progress',
+      runtime: "3 days",
+      finishdate: " 10 Fri"
+    },
+    {
+      id: 4,
+      name: "Client Drafting (2) with Lawrence",
+      admin: "Jack F.",
+      members: 7,
+      status: 'Inprogress',
+      runtime: "1 week",
+      finishdate: "19Sun"
+    },
+    {
+      id: 5,
+      name: "Client Drafting (3) with Jane",
+      admin: "John J.",
+      members: 7,
+      status: 'Inprogress',
+      runtime: "2 week",
+      finishdate: "25 Sat"
+    },
+  
+  ];
+  function Task() {
   return (
     
 <div className='BackDrop'>
@@ -27,79 +97,29 @@ const Task = () => {
             </div>
     </div>
 
-    <hr id='task-hr'/>
+<div style={{ height: 219 }}>
+<DataGrid className='data-layout'
+        rows={rows}
+        columns={columns}
+        hideFooter={true}
+        hideFooterSelectedRowCount={true}
+        hideFooterPagination={true}
+        initialState={{
+            pagination: {
+               paginationModel: { page: 0, pageSize: 5},
+             },
+           }}
+       key={rows.id}
+        checkboxSelection
+        
+      />
 
-<div className='Groups'>
-    <input type="checkbox" name="" id="check" />
-    <ul className='headings'>
-        <li id=''>Name</li>
-        <li id='Admin'>Admin</li>
-        <li id='MEM'>Members</li>
-        <li id=''>Status</li>
-        <li id='RT'>Run Time</li>
-        <li id='FD'>Finish Date</li>
-    </ul>
-</div>
 
-<hr id='task-hr1'/>
-{
-
-
-/*  UN-COMMENT IF YOU NEED TO SEE THE LIST 
-<div className='Groups'>
-    <input type="checkbox" name="" id="check" />
-    <ul className='headings'>
-        <li id='Name'>ClientOnboarding - CIRCLE</li>
-        <li id='Admin2'><img src="" alt="" /> Samantha J.</li>
-        <li id='MEM1'>3</li>
-        <li id='IN-Pro'><img src="" alt="" />   In Progress</li>
-        <li id='RT2'>6 Hours</li>
-        <li id='date'>6 Mon</li>
-    </ul>
-</div>
-
-<div className='Groups1'>
-    <input type="checkbox" name="" id="check" />
-    <ul className='headings1'>
-        <li id='Name'>Meeting with Webflow & Notion</li>
-        <li id='Admin2'><img src="" alt="" /> Bob P.</li>
-        <li id='MEM1'>4</li>
-        <li id='IN-Pro'><img src="" alt="" />   Done</li>
-        <li id='RT2'>2 Hours</li>
-        <li id='date'>7 Tue</li>
-    </ul>
-</div>
-
-<div className='Groups2'>
-    <input type="checkbox" name="" id="check" />
-    <ul className='headings2'>
-        <li id='Name'>First Handoff with Engineers</li>
-        <li id='Admin2'><img src="" alt="" /> Kate O.</li>
-        <li id='MEM1'>10</li>
-        <li id='IN-Pro'><img src="" alt="" />In Progress</li>
-        <li id='RT2'>3 days</li>
-        <li id='date'>10 Fri</li>
-    </ul>
-</div>
-
-<div className='Groups3'>
-    <input type="checkbox" name="" id="check" />
-    <ul className='headings'>
-        <li id='Name'>Client Drafting (2) with Lawrence</li>
-        <li id='Admin2'><img src="" alt="" /> Jack F.</li>
-        <li id='MEM1'>7</li>
-        <li id='IN-Pro'><img src="" alt="" />   In Progress</li>
-        <li id='RT2'>1 Week</li>
-        <li id='date'>6 Mon</li>
-    </ul>
-</div> */}
-
-</div>
+      </div>
 
       
- 
+</div>
   )
 }
-
 export default Task
 
